@@ -15,7 +15,7 @@
         <h1>Form</h1>
         <form id="main" name="main">
             <div class="row mb-3">
-                <div class="col">
+                <div class="col-sm">
                     <label for="fname">First name:
                         <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Only letters!">
                             <i class="fa-regular fa-circle-question"></i>
@@ -23,7 +23,7 @@
                     </label>
                     <input class="form-control" type="text" id="fname" name="First name" required pattern="[A-Za-z]*">
                 </div>
-                <div class="col">
+                <div class="col-sm">
                     <label for="lname">Last name:
                         <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Only letters!">
                             <i class="fa-regular fa-circle-question"></i>
@@ -34,7 +34,7 @@
             </div>
 
             <div class="row mb-3">
-                <div class="col">
+                <div class="col-sm">
                     <label for="Address">Address:
                         <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Max 35 Character!">
                             <i class="fa-regular fa-circle-question"></i>
@@ -42,11 +42,11 @@
                     </label>
                     <input class="form-control" type="text" id="Address" name="Address" maxlength="35" required>
                 </div>
-                <div class="col">
+                <div class="col-sm">
                     <label for="date">Date:</label>
                     <input class="form-control" type="date" id="date" name="Date">
                 </div>
-                <div class="col">
+                <div class="col-sm">
                     <label for="gender">Gender:</label>
                     <select class="form-select mt3" id="gender" name="Gender">
                       <option value="female">Female</option>
@@ -64,18 +64,20 @@
         </form>
     </div>
 
-    <table class="table table-bordered table-hover table-dark table-striped table-responsive mt-3" id="table">
-        <thead>
-            <tr  data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
-                <th>Del</th>
-                <th>ID</th>
-                <th>First name</th>
-                <th>Last name</th>
-                <th>Address</th>
-                <th>Date</th>
-                <th>Gender</th>
-            </tr>
-        </thead>
-    </table>
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover table-dark table-striped mt-3" id="table">
+            <thead>
+                <tr  data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                    <th>Del</th>
+                    <th>ID</th>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Address</th>
+                    <th>Date</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
 </body>
 </html>
